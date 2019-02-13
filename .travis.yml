@@ -6,6 +6,12 @@ install:
 - bundle install
 script:
 - fastlane beta
+- git clone https://github.com/genie-park/travis-ci-addon-apptest-ai
+- chmod +x ./travis-ci-addon-apptest-ai/phase.sh
+- export binary_path=./app/build/outputs/apk/debug/app-debug.apk
+- export project_id='825'
+- ./travis-ci-addon-apptest-ai/phase.sh
+
 env:
   global:
   - secure: fUnmuuqKmxWjxGHbfTB7QZgSmkB7yvt6KGAn8dCs1j4GneWbSIrEhghRrlOMQCThhMoetou4H+NaWeTXRRa4fpoCGm1U51RbD+J4DrbKWj3MzRupzByEAsaWhmvCaYVgCOlkYgaApcvujIrpw1rUTQVio8+WoYIXgXx3BZF06VN50oNT58BUZAD/UUeEacp8GEI5tcPbsbaKbPqy2Rb5HSQ+RkSfAWJhuA+x4RT8l8geXRdUhtrT00EasL7a7p/4OIPkW4pAGvBth/jiDoWA3N2tDME7AOU+whvt9tVju9Db/WKarWYCkPuSVwHTUH6W9o3TyvLLgAsapbgrS7DtJkJx5NoPNyZa5WrlnOdNAerSgQRC724sfSM4dHrYhkSWHRueAjD9X0JbS5TEUeTnw2XHbq+hbc/5aFR/CnZFkTSv6XItnL6ES6tz/nQjNZfIdsHRFfoTCre1Uah3zAu0veHh7d1srvq91lvc3VSrnuhSoNpegPSc1NZ5dmN1VkhLRt7q8hSU1HMpBYe76q58UyfS02BjTswQJOoQHmBDl+DDv045qi4q1/hfCd/JqGNgH3bp2KtZxV0uq+aUicC7XWhaHyaVaGnVJa94kqayxNsoFP3zOse//VlIL46iHDSpuIzXCcgR2IT59T+E5i/c1fOzA65KEn8Aw7cr/5R8W2s=
