@@ -7,7 +7,6 @@ platform :ios do
 
   lane :beta do
     match(type: "development" )
-    cocoapods
     build_ios_app(
       scheme: "HackerNews",
       export_options: {
