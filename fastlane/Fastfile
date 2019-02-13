@@ -9,6 +9,7 @@ platform :ios do
     match(type: "development" )
     build_ios_app(
       scheme: "HackerNews",
+      export_method: "development",
       export_options: {
         method: "development",
     	provisioningProfiles: { 
