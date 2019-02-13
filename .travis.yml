@@ -9,6 +9,7 @@ install:
 
 script:
 - set -e
+- pod install
 - fastlane beta
 - git clone https://github.com/apptestai/ci_addon
 - chmod +x ./ci_addon/travis_phase.sh
