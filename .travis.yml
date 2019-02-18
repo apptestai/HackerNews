@@ -12,10 +12,9 @@ script:
 - pod install
 - fastlane beta
 - git clone https://github.com/apptestai/ci_addon
-- chmod +x ./ci_addon/travis_phase.sh
 - export binary_path=HackerNews.ipa
-- export project_id='825'
-- "./ci_addon/travis_phase.sh"
+- export project_id='831'
+- bash ./ci_addon/step.sh
 
 deploy:
   provider: releases
