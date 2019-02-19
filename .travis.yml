@@ -13,7 +13,7 @@ script:
 - fastlane beta
 - git clone https://github.com/apptestai/ci_addon
 - export binary_path=HackerNews.ipa
-- export project_id='831'
+- export project_id='825'
 - bash ./ci_addon/step.sh
 
 deploy:
