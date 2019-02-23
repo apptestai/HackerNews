@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  apptest-ai: apptestai/ios-app-test@volatile
+  apptest-ai: apptestai/app-test@volatile
 jobs:
   build:
     macos:
